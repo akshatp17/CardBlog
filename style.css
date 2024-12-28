@@ -50,13 +50,13 @@ main{
     justify-content: center;
     margin: 20px;
     gap: 20px;
+    width: 75%;
 }
 
-.contents *{
+.guide{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .guide button{
@@ -67,8 +67,42 @@ main{
 
 .card-list{
     min-height: 50vh;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3,max-content);
+    grid-template-columns: repeat(3,300px);
+    gap: 5px;
     align-items: center;
+    justify-content: center;
+    max-width: 75%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 220, 0.75);
+    padding: 2%;
+    border-radius: 15px;
+    min-height: 250px;
+    gap: 5px;
+}
+
+.cimg{
+    min-height: 150px;
+}
+
+.ctitle{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.ccontent{
+    font-size: 0.9em;
+}
+
+.cbottom{
+    position: relative;
+    left: 0px;
+    font-size: 0.75em;
 }
 
 footer{
