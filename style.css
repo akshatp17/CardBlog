@@ -14,7 +14,7 @@
 } */
   
 .dark-mode {
-    background-color: black;
+    background-color: #0d0f13;
     color: white;
   }
 
@@ -79,18 +79,19 @@ main{
     min-height: 50vh;
     display: grid;
     grid-template-rows: repeat(3,max-content);
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: repeat(3,250px);
     gap: 5px;
     align-items: center;
     justify-content: center;
     max-width: 75%;
+    scale: 0.9;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     background-color: rgba(245, 245, 220, 0.75);
-    padding: 2%;
+    padding: 8px;
     border-radius: 15px;
     min-height: 250px;
     gap: 5px;
